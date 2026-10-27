@@ -1,0 +1,31 @@
+name: Correction
+description: Report a factual error, a broken source or a typo on stevesparks.dev
+title: "Correction: "
+labels: [correction]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The link to the page (and chapter or page number in the book)
+      placeholder: https://stevesparks.dev/book/...
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: What it says
+      description: Quote the sentence or describe the item
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link or citation that supports the correction, if you have one
